@@ -3,26 +3,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body {
+body{
     width: 100%;
     height: 100%;
-    margin: 0;
-    /*background-image: url(/assets/bacckground-2.png);
-    background-size: contain;
-    background-repeat:no-repeat;
-    background-position: center;*/
-    background-image: linear-gradient(#f5e9e9, #f8d8f2, #f9f0d1);
+    background-image: linear-gradient(#F2C1BD, #F0F2B3, #F2D6BD);
     background-repeat:repeat-y;
+    margin: 0;
+}
+#main-container{
+    background-image: url(https://raw.githubusercontent.com/mariabuitsan/textiles/refs/heads/main/assets/bacckground-2.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
 #menu{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 99.5%;
     height:fit-content;
     align-items: flex-start;
-    margin-top: 5%;
+    margin-top: 1.8%;
     margin-bottom: 1%;
     /*border: solid 5px brown;*/
+}ul {
+    list-style-type: none;
+    padding: 1em;
+    margin: 0;
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    background-color:#31a4ebc2;
+  }
+.nav-bar {
+    width: 6vw;
+    height: 4vh;
+    padding: 0;
+    margin: 0;
+    color:black;
+    font-size: 1.15vw;
+    font-weight: 400;
+
+}
+.nav-bar:hover {
+    background-color: salmon;
+    padding: 1em;
+}
+a{
+    text-decoration: none;
+    overflow: scroll;
+}
+a:hover{
+    background-color: salmon;
+    padding: 1em;
+    box-shadow: 10px 10px 5px 12px #F0F2B3;
 }
 .options{
     display: flex;
@@ -30,6 +66,8 @@ body {
     margin-top: 5%;
     align-items: center;
     justify-content: center;
+    padding-right: 15%;
+    /*border: black solid 5px;*/
 }
 #all-container{
     display: flex;
@@ -45,28 +83,30 @@ body {
     align-items: center;
     /*border: 5px solid;*/
     margin: 1em;
+    padding-left: 8%;
     flex: 1 1 500px;   
 }
 .detalles{
     width: 80%;
     height: 60vh;
     margin: 1%;
-    border-radius: 1000px;
-    background-image: url(/assets/butterfly-nbk.png);
+    background-image: url(https://github.com/mariabuitsan/textiles/blob/main/assets/butterfly-nbk.png?raw=true);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 5%;
+    margin-top: 15%;
 }
 .detalles-2{
     width: 80%;
-    height: fit-content;
+    height: 50vh;
     margin: 8%;
+    padding: 1.8em;
     background-image: linear-gradient(#f2d6d6f4, #eedfb2e6, #f6f0cdf4);
-    opacity: 0.45;
-    border-radius: 10%;
-    border: solid 15px transparent;
+    opacity: 0.35;
+    border: solid 35px transparent;
     border-image: url(/assets/jean-star.jpeg) 80 round;
+    align-content: center;
     /*background-image: url(/assets/jeans-flower.jpeg);
     background-size: 100%;
     background-repeat: repeat-y;
@@ -81,7 +121,9 @@ body {
     margin: 0.5em;
     /*border: solid 5px red;*/
     flex: 2 1 600px;
-}#prenda{
+    align-items: center;
+}
+#prenda{
     width: 80%;
     height: 80vh;
     margin: 0%;
@@ -99,6 +141,7 @@ body {
     flex-wrap: wrap;
     height: fit-content;
     width: 50%;
+    margin-top: 15%;
     margin-left: 50%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -106,18 +149,14 @@ body {
 }
 p{
     text-align: center;
-    font-size: 2.2vh;
-    font-weight: 250;
+    font-size: 2.25vh;
+    font-weight: 350;
     font-family: 'Roboto', sans-serif;
-    font-weight: 00;
-    line-height: 1.5;
+    line-height: 1.7;
     color: rgba(19, 19, 19, 0.903);
-    padding: 2.5em;
-    margin-top: 0%;
-    margin-left: 2%;
+    margin-top: 0%; 
     margin-right: 2%;
-    /*font-weight: bolder;*/
-    /*text-shadow: 2px 2px 5px rgb(245, 185, 238);*/
+    padding: 1em;
 }
 h2{
     display: flex;
@@ -133,11 +172,11 @@ h2{
 }
 h3{
     text-align: center;
-    font-size: 5.5vh;
+    font-size: 6.3vh;
     font-family: 'Doto', sans-serif;
     font-weight: bolder;
     margin: 0%;
-    padding-left: 25%;
+    padding-left: 18%;
 }
 h4{
     font-family: 'Noto Sans Display', sans-serif;
@@ -158,12 +197,14 @@ h4{
 #detalles-3{
     display: flex;
     flex-direction: row;
-    width: 45vw;
-    height: 60vh;
+    width: 25vw;
+    height: 30vh;
     margin: 5%;
+    margin-top: 10%;
     /*border: solid 5px black;*/
     background-image: url(/assets/jean-star.jpeg);
-    background-size: 25%;
+    background-size: 100%;
+    align-content: flex-end;
 }
 #detalles-3:hover{
     box-shadow: 10px 10px 5px 12px #f8e6fc;
@@ -186,7 +227,7 @@ a{
 .grid{
     width: 22vw;
     height: 22vh;
-    border: blue solid 5px;
+    /*border: blue solid 5px;*/
     margin-left: 5%;
 }
 
