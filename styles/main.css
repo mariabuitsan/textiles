@@ -111,7 +111,7 @@ a:hover{
     background-image: linear-gradient(#f2d6d6f4, #eedfb2e6, #f6f0cdf4);
     opacity: 0.35;
     border: solid 55px transparent;
-    border-image: url(/assets/jean-star.jpeg) 80 round;
+    border-image: url(https://github.com/mariabuitsan/textiles/blob/main/assets/jean-star.jpeg?raw=true) 80 round;
     align-content: center;
     margin-bottom: 30%;
     /*background-image: url(/assets/jeans-flower.jpeg);
@@ -135,7 +135,7 @@ a:hover{
     height: 80vh;
     margin: 0%;
     /*border: solid 5px black;*/
-    background-image: url(/assets/jeans.png);
+    background-image: url(https://github.com/mariabuitsan/textiles/blob/main/assets/jeans.png?raw=true);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
@@ -210,7 +210,7 @@ h4{
     margin: 5%;
     margin-top: 10%;
     /*border: solid 5px black;*/
-    background-image: url(/assets/jean-star.jpeg);
+    background-image: url(https://github.com/mariabuitsan/textiles/blob/main/assets/jean-star.jpeg?raw=true);
     background-size: 100%;
     align-content: flex-end;
 }
