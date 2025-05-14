@@ -6,28 +6,24 @@
 body{
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(#F2C1BD, #F0F2B3, #F2D6BD);
-    background-repeat:repeat-y;
-    margin: 0;
+    /*border: blueviolet 10px solid;*/
 }
 #main-container{
-    background-image: url(https://raw.githubusercontent.com/mariabuitsan/textiles/refs/heads/main/assets/bacckground-2.png);
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center;
     width: 100%;
     height: 100%;
+    /*border: solid black 5px;*/
 }
 #menu{
     display: flex;
     flex-direction: column;
-    width: 99.5%;
+    width: 95%;
     height:fit-content;
     align-items: flex-start;
-    margin-top: 1.8%;
+    margin-top: 2.5%;
     margin-bottom: 1%;
     /*border: solid 5px brown;*/
-}ul {
+}
+ul {
     list-style-type: none;
     padding: 1em;
     margin: 0;
@@ -60,6 +56,12 @@ a:hover{
     padding: 1em;
     box-shadow: 10px 10px 5px 12px #F0F2B3;
 }
+#video-hidden{
+    display: block;
+    margin-left: 13%;
+    margin-top: 5%;
+    border: black 7px solid;
+}
 .options{
     display: flex;
     flex-direction: row;
@@ -74,17 +76,21 @@ a:hover{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
-    /*border: 5px solid blueviolet;*/
+    /*border: 35px solid blueviolet;*/
     padding: 1em;
+    background-image: linear-gradient(#F2C1BD, #F0F2B3, #F2D6BD);
+    background-repeat:repeat-y;
+    margin-bottom: 15%;
 }
 #left-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     /*border: 5px solid;*/
-    margin: 1em;
-    padding-left: 8%;
-    flex: 1 1 500px;   
+    flex: 1 1 500px;
+    /*background-color: rgba(0, 0, 0, 0.644);*/
+    border-radius: 5%;
+    margin-left: 10%;
 }
 .detalles{
     width: 80%;
@@ -104,9 +110,10 @@ a:hover{
     padding: 1.8em;
     background-image: linear-gradient(#f2d6d6f4, #eedfb2e6, #f6f0cdf4);
     opacity: 0.35;
-    border: solid 35px transparent;
+    border: solid 55px transparent;
     border-image: url(/assets/jean-star.jpeg) 80 round;
     align-content: center;
+    margin-bottom: 30%;
     /*background-image: url(/assets/jeans-flower.jpeg);
     background-size: 100%;
     background-repeat: repeat-y;
@@ -124,14 +131,14 @@ a:hover{
     align-items: center;
 }
 #prenda{
-    width: 80%;
+    width: 100%;
     height: 80vh;
     margin: 0%;
     /*border: solid 5px black;*/
     background-image: url(/assets/jeans.png);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 }
 #prenda:hover{
     cursor: pointer;
@@ -152,7 +159,7 @@ p{
     font-size: 2.25vh;
     font-weight: 350;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.7;
+    line-height: 1.5;
     color: rgba(19, 19, 19, 0.903);
     margin-top: 0%; 
     margin-right: 2%;
@@ -161,7 +168,7 @@ p{
 h2{
     display: flex;
     align-self: flex-start;
-    font-family: 'doto', sans-serif;
+    font-family: 'Doto', sans-serif;
     font-size: 3.5vh;
     padding: auto;
     color: rgb(9, 9, 9);
@@ -185,7 +192,8 @@ h4{
     font-weight: 300;
     line-height: 1.5;
 }
-#production{
+/*I'm not using this, to activate I must do something on the js file, the way it pops-up its awkard, needs fixing*/
+.production{
     display: none;
     width: 100%;
     height: 5.5vh;
@@ -207,27 +215,49 @@ h4{
     align-content: flex-end;
 }
 #detalles-3:hover{
-    box-shadow: 10px 10px 5px 12px #f8e6fc;
+    box-shadow: 10px 10px 5px 12px #fbffac;
 }
 a{
     color: black;
 }
 #container-grid{
     display: grid;
-    border: solid 5px black;
+    /*border: solid 10px black;*/
     height: 100vh;
     column-gap: 3%;
     row-gap: 0%;
     grid-template-columns: auto auto auto;
-    background-image: url(/assets/Layer\ 0.png);
+    margin: 8%;
+    text-overflow: hidden;
+    /*background-image: url(/assets/Layer\ 0.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
 }
 .grid{
     width: 22vw;
     height: 22vh;
     /*border: blue solid 5px;*/
     margin-left: 5%;
+    background-image: linear-gradient(#f2d6d6f4, #eedfb2e6, #f6f0cdf4);
+    opacity: 0.35;
+    overflow: scroll;
 }
-
+.grid:hover{
+    opacity: 1;
+}
+.quotes{
+    font-size: 2vh;
+    line-height: 2;
+}
+.etno-notes{
+    width: fit-content;
+    height: fit-content;
+    padding: 5%;
+    margin: 5%;
+    border: solid black 5px;
+    font-size: 1vh;
+    justify-items: center;
+    justify-self: center;
+    margin-top: 2%;
+}
