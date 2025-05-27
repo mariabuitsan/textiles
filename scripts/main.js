@@ -21,6 +21,6 @@ function mostrarDetalles() {
 //}
 
 document.getElementById("prenda").addEventListener("mouseover", mostrarDetalles);
-document.getElementById("prenda").addEventListener("mouseout", ocultarDetalles);
+//document.getElementById("prenda").addEventListener("mouseout", ocultarDetalles);
 
-prenda.style.backgroundImage = 'url("assets/jean-star-remix.png")'
+//prenda.style.backgroundImage = 'url("assets/jean-star-remix.png")'
